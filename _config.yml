@@ -1,0 +1,13 @@
+# Site settings
+title: Jinked!
+email: aj.lobato@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Things about stuff.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://blog.jinked.com" # the base hostname & protocol for your site
+twitter_username: Cidan
+github_username:  Cidan
+
+# Build settings
+markdown: kramdown
+paginate: 5

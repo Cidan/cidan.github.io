@@ -1,0 +1,24 @@
+#!/bin/bash
+TITLE=$@
+if [[ "$TITLE" == "" ]]; then
+	echo "Usage: new <title>"
+	exit 1
+fi
+CLEAN_TITLE=${TITLE// /-}
+DATE=`date "+%Y-%m-%d"`
+TIME=`date "+%H:%M:%S"`
+header=$(cat << EOF
+---
+layout: post
+title:  "$TITLE"
+date:   $DATE $TIME
+categories: eh
+---
+EOF
+)
+if [ -f _posts/$DATE-$CLEAN_TITLE.md ]; then
+	echo "A blog post with that name and date already exists. Exiting."
+	exit 1
+fi
+echo "$header" > _posts/$DATE-$CLEAN_TITLE.md
+echo "Post created."
