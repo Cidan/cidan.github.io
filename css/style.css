@@ -68,7 +68,7 @@ h3 {
     text-decoration: none;
 }
 
-.comment_link .comment_link:hover {
+.comment_link, .comment_link:hover {
     padding-top: 10px;
     color: #000;
     text-decoration: bold;
