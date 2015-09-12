@@ -2,7 +2,7 @@
 {% for post in paginator.posts %}
 	<div class="panel panel-default full-width autopagerize_page_element">
 		<div class="panel-body">
-			<h3 style='margin-top: 0px'><a class="title_link" href="{{ post.url }}">{{ post.title }}</a></h3>
+			<h2 style='margin-top: 0px'><a class="title_link" href="{{ post.url }}">{{ post.title }}</a></h2>
 			<p class='text-body'>{{ post.content }}</p>
 			<a class="comment_link" href="{{ post.url }}#disqus_thread">...</a>
 		</div>

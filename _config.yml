@@ -11,3 +11,6 @@ github_username:  Cidan
 # Build settings
 markdown: kramdown
 paginate: 5
+
+# Serve settings
+host: 0.0.0.0
