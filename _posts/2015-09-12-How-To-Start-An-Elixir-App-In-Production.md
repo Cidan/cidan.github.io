@@ -50,7 +50,7 @@ A few things to note:
 1. You should be using an init system that is event based. That is, use Upstart, systemd, runit, etc. Do not use sysvinit.
 2. `elixir` sets Erlang parameters, and in this case we're setting the node name and Erlang cookie.
 3. Replace the `app@hostname` bit with something more suitable for your environment.
-4. Passing `-S mix run` tells Elixir to start the app it self using mix. Since mix is compile tool, we want to instruct mix not to compile our code in production, and to not halt once the code as started running.
+4. Passing `-S mix run` tells Elixir to start the app it self using mix. Since mix is the compile tool, we want to instruct mix not to compile our code in production, and to not halt once the code as started running.
 5. The `MIX_ENV` can be omitted and instead put into some other facility of your init script, ie: Upstart env stanza, etc.
 
 Using the above command, your Elixir app will launch cleanly into the foreground... unless you are using Phoenix! There is one last thing that you must do in order to make a Phoenix app work. Edit your `config/prod.exs` file and make sure the following is uncommented:
