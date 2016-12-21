@@ -13,3 +13,6 @@ paginate: 5
 
 # Serve settings
 host: 0.0.0.0
+
+# Gems.
+gems: [jekyll-paginate]
