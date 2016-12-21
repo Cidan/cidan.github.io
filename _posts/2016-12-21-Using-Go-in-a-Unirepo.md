@@ -68,6 +68,7 @@ Now any project that includes this file (as noted in the section above) will wor
 	make test
 
 It's important to note this setup **automatically sets your GOPATH, you do not need to set it in your bash profile, and is 100% portable across folder locations and OS's.**
+
 ### This Is Dumb; Why Would You Do This?
 Speed and simplicity of management.
 
