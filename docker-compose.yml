@@ -2,7 +2,7 @@ version: '3'
 services:
   blog:
     container_name: "blog"
-    image: "jekyll/jekyll"
+    image: "jekyll/jekyll:3.2"
     command: jekyll serve --force_polling
     ports:
       - "4000:4000"
