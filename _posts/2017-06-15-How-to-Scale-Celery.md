@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to Scale Celery"
+title:  "How To Scale Celery"
 date:   2017-06-15 12:02:47
 categories: python
 ---
