@@ -62,10 +62,11 @@ h4 {
     text-align: right;
     list-style-image: none;
     list-style-position: none;
-    list-style-type: none;
+	list-style-type: none;
+	width: 160px;
 }
 
-#left-bar a {
+#left-bar a,span {
     text-decoration: none;
     color: #000;
     font-size: 18px;
@@ -92,4 +93,20 @@ h4 {
 	border-bottom: 0px;
 	margin-bottom: 10px;
 	padding-bottom: 0px;
+}
+
+.pager {
+	font-size: 18px;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.pagination {
+	width: 100%;
 }

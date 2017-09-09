@@ -2,5 +2,11 @@
 	<ol id="left-bar" class="bs-sidebar affix">
 		<h2 class="title">Jinked</h2>
 		<li><a href="/">Home</a></li>
+		{% if paginator.previous_page %}
+		<li><a href="{{ paginator.previous_page_path }}">Previous Page</a></li>
+		{% endif %}
+		{% if paginator.next_page %}
+		<li><a href="{{ paginator.next_page_path }}" class="pager">Next Page</a></li>
+		{% endif %}
   </ol>
 </div>
