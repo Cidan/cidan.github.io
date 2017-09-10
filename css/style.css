@@ -94,19 +94,3 @@ h4 {
 	margin-bottom: 10px;
 	padding-bottom: 0px;
 }
-
-.pager {
-	font-size: 18px;
-}
-
-.float-left {
-	float: left;
-}
-
-.float-right {
-	float: right;
-}
-
-.pagination {
-	width: 100%;
-}
